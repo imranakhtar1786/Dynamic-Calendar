@@ -1,0 +1,215 @@
+/* for Home  */
+.container{
+    margin-top: 10px;
+    height: 95vh;
+    width: 98vw;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+#cont-item1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+#cont-item2{
+    margin-top: 5px;
+    height: 100%;
+    width: 75%;
+    margin-left: 2px;
+    display: grid;
+    grid-template-rows: 90px 90px 90px 90px 90px 90px 90px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 1px;
+    color: #807f7f;
+}
+.block{
+    height: 100%;
+    width:100%;
+    text-align: center;
+    border:1px solid rgb(171, 169, 169);
+    cursor: pointer;
+}
+
+/*  for SmallCalender */
+.upper-layer{
+    margin-top: 30px;
+    height: 8%;
+    width: 28%;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    margin-left: 10px;
+    position: relative;
+    user-select: none;
+}
+.onhover{
+    height: 8rem;
+    width: 5rem;
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.arrow-up{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid  #e7e1e1; 
+    position: absolute;
+    top: -7px; 
+    left: 30px; 
+}
+.onhover a{
+    height: 31%;
+    width: 100%;
+    text-decoration: none;
+    color:black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.onhover a:hover{
+    background-color:rgb(204, 245, 245);
+    color: rgb(46, 193, 193);
+}
+.upper-layer:hover .onhover{
+    display: flex;
+    position: absolute;
+    top: 51px;
+    transition: all ease-in-out 1s;
+}
+
+
+.upper-layer1{
+    margin-top: 5px;
+    height: 10%;
+    width: 100%;
+}
+.upper-layer-item{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+}
+#upper-layer1{
+    margin-left: 10px;
+    float: left;
+    width:50% ;
+    font-size: 20px;
+    user-select: none;
+}
+#upper-layer3{
+    float: right;
+    width:8%;
+    margin-right: 5%;
+    user-select: none;
+}
+#upper-layer3 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#upper-layer2{
+    float: right;
+    width:8%;
+    margin-right: 10%;
+    user-select: none;
+}
+#upper-layer2 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.upper-layer2{
+    height: 40%;
+    width: 90%;
+    cursor: pointer;
+    color: #424141;
+}
+.upper-layer2 table{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.upper-layer3{
+    height: 6%;
+    width: 80%;
+    margin: 10px;
+    user-select: none;
+}
+.upper-layer3 select{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.upper-layer4{
+    margin-left: 10px;
+    height: 8%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: larger;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* for week_view */
+.cont-item2{
+    margin: 10px;
+    height: 96%;
+    width: 75%;
+    margin-left: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: .2px solid black;
+    overflow-y:scroll;
+    user-select: none;
+}
+.inner-cont-item2{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around ;
+    margin-bottom: 5px;
+}
+.p4{
+    width: 50%;
+    height: 65%;
+    border-radius: 10px;
+    padding: 5px;
+    display: grid;
+    align-items: center;
+}
+.inner-cont-item2 a{
+    text-decoration: none;
+}
+
+/* Input_con */
+.input_container{
+    height: 60vh;
+    width: 60vw;
+    background-color:grey;
+    position: absolute;
+    top: 20%;
+    left:20%
+}
